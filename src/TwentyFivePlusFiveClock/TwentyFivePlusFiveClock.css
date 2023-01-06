@@ -1,0 +1,76 @@
+h1 {
+  color: #ab79d6;
+  text-align: center;
+}
+
+h2 {
+  color: #c5c5ce;
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #d367c1;
+  font-size: 1.7em;
+  font-weight: bold;
+  padding: 5px;
+  margin: 0 0.4em;
+}
+
+button:hover {
+  color: #ab79d6;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+}
+body #root {
+  display: flex;
+  background-color: #27272c;
+  min-height: 100vh;
+  height: 100%;
+}
+body #root #clockBox {
+  min-height: 60%;
+  margin: auto;
+  padding: 0;
+  color: #c5c5ce;
+  text-align: center;
+}
+body #root #clockBox .heading {
+  font-size: 2em;
+}
+body #root #clockBox .adjust {
+  min-height: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  gap: 10px;
+}
+body #root #clockBox .adjust span {
+  color: #00bbcb;
+  font-size: 2em;
+  font-weight: bold;
+}
+body #root #clockBox .timer {
+  border: 2px dotted #00bbcb;
+  border-radius: 20px;
+  padding: 0 3em;
+  margin: 0.7em 0;
+  font-size: 1.5em;
+}
+body #root #clockBox .timer p {
+  color: #00bbcb;
+  font-size: 2em;
+  font-weight: bold;
+}
+body #root #clockBox .controls {
+  padding-bottom: 0.5em;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+body #root #clockBox .author {
+  min-height: 2em;
+}
